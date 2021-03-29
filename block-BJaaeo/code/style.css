@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cal-div {
+  min-width: 60%;
+  text-align: center;
+  margin-top: 5rem;
+}
+table {
+  width: 100%;
+}
+.cal {
+}
+
+td {
+  width: 23%;
+  height: 100%;
+  background-color: aquamarine;
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+.display {
+  width: 93%;
+  text-align: right;
+  padding: 1.5rem;
+  background-color: black;
+  color: white;
+  min-height: 3rem;
+  border-radius: 5px;
+  font-size: 3rem;
+  font-weight: 800;
+}
+.td {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.pri {
+  background-color: #721f33;
+  color: white;
+}
+.sec {
+  background-color: #cfcfcf;
+}
+.ter {
+  background-color: #218080;
+}
+.quar {
+  background-color: #3d1b10;
+  color: white;
+}
