@@ -13,11 +13,13 @@ let boxes2 = document.querySelector(".boxes2");
 let boxes2list = document.querySelectorAll(".boxes2>.box");
 
 function handleEvent(event) {
-  let number = Array.from(boxes2list).indexOf(event.target) + 1;
-  event.target.innerText = number;
+  if (event.target.classList[0] === "box") {
+    let number = Array.from(boxes2list).indexOf(event.target) + 1;
+    event.target.innerText = number;
 
-  setTimeout(() => {
-    event.target.innerText = "";
-  }, 5000);
+    setTimeout(() => {
+      event.target.innerText = "";
+    }, 5000);
+  }
 }
 boxes2.addEventListener("click", handleEvent);
