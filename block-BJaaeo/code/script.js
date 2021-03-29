@@ -22,17 +22,18 @@ table.addEventListener("click", (event) => {
       total = "";
       display.innerText = "0";
     } else if (event.target.classList[1] === "ter") {
-      let split = total.split(" ");
-      if (split[1] === "+") {
-        total = Number(split[0]) + Number(split[2]);
-      } else if (split[1] === "-") {
-        total = Number(split[0]) - Number(split[2]);
-      } else if (split[1] === "*") {
-        total = Number(split[0]) * Number(split[2]);
-      } else if (split[1] === "/") {
-        total = Number(split[0]) / Number(split[2]);
-      }
-      if (total !== "NaN" && total !== "Undefined" && total !== "Infinity") {
+      //   let split = total.split(" ");
+      //   if (split[1] === "+") {
+      //     total = Number(split[0]) + Number(split[2]);
+      //   } else if (split[1] === "-") {
+      //     total = Number(split[0]) - Number(split[2]);
+      //   } else if (split[1] === "*") {
+      //     total = Number(split[0]) * Number(split[2]);
+      //   } else if (split[1] === "/") {
+      //     total = Number(split[0]) / Number(split[2]);
+      //   }
+      total = eval(total);
+      if (total !== "NaN" && total !== "undefined" && total !== "Infinity") {
         display.innerText = total;
       } else {
         setTimeout(() => {
