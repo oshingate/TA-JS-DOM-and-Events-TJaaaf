@@ -35,3 +35,72 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* ------------------- */
+body {
+  background: linear-gradient(
+    to right top,
+    rgba(72, 146, 206, 0.795),
+    rgba(72, 146, 206, 0.495)
+  );
+}
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.form-sec {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+}
+form {
+  width: 40%;
+  max-height: 60%;
+  margin: 4rem 0;
+  /* padding: 2rem; */
+  border: 1px solid black;
+  box-shadow: 3px 3px gray;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.493),
+    rgba(255, 255, 255, 0.219)
+  );
+  border-radius: 5px;
+}
+fieldset {
+  border: none;
+}
+label {
+}
+input {
+  display: inline-block;
+  width: 100%;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.493),
+    rgba(255, 255, 255, 0.219)
+  );
+  border: 1px solid gray;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+}
+button {
+  padding: 0.5rem 1rem;
+  background-color: rgb(62, 114, 114);
+  border: none;
+  border-radius: 5px;
+}
+.btn-div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 2rem;
+}
+
+.sucess {
+  border: 2px solid green;
+}
+.error {
+  border: 2px solid red;
+}
