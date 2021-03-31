@@ -1,5 +1,5 @@
 let mainFunc = () => {
-  let allTasksFor = [
+  let allTasks = [
     {
       name: "watch movie",
       isChecked: false,
@@ -9,8 +9,9 @@ let mainFunc = () => {
       isChecked: true,
     },
   ];
-  localStorage.setItem("todo", JSON.stringify(allTasksFor));
-  let allTasks = JSON.parse(localStorage.getItem("todo"));
+  localStorage.setItem("todo", JSON.stringify(allTasks));
+
+  allTasks = JSON.parse(localStorage.getItem("todo"));
   let input = document.querySelector("#text");
   let taskDiv = document.querySelector(".task-div");
 
@@ -20,6 +21,8 @@ let mainFunc = () => {
       newtask.isChecked = false;
       newtask.name = event.target.value;
       allTasks.push(newtask);
+      localStorage.setItem("todo", JSON.stringify(allTasks));
+
       listAllTasks();
       input.value = "";
     }
@@ -61,10 +64,14 @@ let mainFunc = () => {
 
   let crossEvent = (i) => {
     allTasks.splice(i, 1);
+    localStorage.setItem("todo", JSON.stringify(allTasks));
+
     createUI();
   };
   let checkEvent = (arr, i) => {
     arr[i].isChecked = !arr[i].isChecked;
+    localStorage.setItem("todo", JSON.stringify(allTasks));
+
     createUI();
   };
 
@@ -109,6 +116,7 @@ let mainFunc = () => {
     allTasks = allTasks.filter((e, index, arr) => {
       return e.isChecked === false;
     });
+    localStorage.setItem("todo", JSON.stringify(allTasks));
 
     allTasks.forEach((ele, index, arr) => {
       defaultUI(ele, index, arr);
