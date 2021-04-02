@@ -1,0 +1,258 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ========= our css ============ */
+
+.header {
+  padding: 1rem 0;
+  background: linear-gradient(
+    to top right,
+    rgba(0, 0, 0, 0.801),
+    rgba(255, 255, 255, 0.671)
+  );
+  text-align: center;
+}
+h1 {
+  color: rgb(68 12 12);
+  font-size: 2rem;
+  font-weight: 800;
+}
+body {
+  background-color: #c5fffd;
+}
+.game-sec,
+.dice-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.game-sec {
+  position: relative;
+}
+.main {
+  width: 70%;
+  height: 55vh;
+  background-color: #edbf85;
+  margin-top: 1rem;
+}
+.main > * {
+  padding-top: 2rem;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.you-head {
+  color: rgba(0, 0, 255, 0.404);
+}
+.comp-head {
+  color: rgba(255, 0, 0, 0.432);
+}
+.dice-box {
+  width: 30%;
+  height: 20vh;
+  background-color: #7bc950;
+}
+.dice-head {
+  text-align: center;
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.dice {
+  height: 4rem;
+  width: 4rem;
+  margin: 0 auto;
+
+  opacity: 0.9;
+  border: 7px solid blue;
+  border-radius: 10px;
+}
+.dice-red {
+  border: 7px solid red;
+}
+img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.flex {
+  display: flex;
+}
+.box1 {
+  flex: 0 1 10%;
+  height: 5rem;
+  background-color: #c5fcef8a;
+  margin: 4px;
+  border-radius: 10px;
+}
+.box2 {
+  flex: 0 1 10%;
+  height: 5rem;
+  background-color: #e69f93;
+  margin: 4px;
+  border-radius: 10px;
+}
+h2 {
+  text-align: center;
+}
+
+.winner {
+  width: 60%;
+  height: 40vh;
+  background-color: rgba(0, 0, 255, 0.63);
+  border: 2px solid green;
+  position: absolute;
+  text-align: center;
+}
+.winner-inactive {
+  display: none;
+}
+.winner h3 {
+  color: wheat;
+  font-size: 2rem;
+  margin-top: 3rem;
+  font-weight: 800;
+}
+.winner h4 {
+  color: wheat;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  background-color: gray;
+}
