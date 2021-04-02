@@ -128,71 +128,131 @@ table {
   border-spacing: 0;
 }
 
-/* =======  our css ================ */
-header {
-  background: linear-gradient(to top right, #e47d089f, rgba(233, 7, 56, 0.345));
-  max-height: 10vh;
-  padding: 2vh 0;
+/* ========= our css ============ */
+
+.header {
+  padding: 1rem 0;
+  background: linear-gradient(
+    to top right,
+    rgba(0, 0, 0, 0.801),
+    rgba(255, 255, 255, 0.671)
+  );
   text-align: center;
 }
 h1 {
+  color: rgb(68 12 12);
   font-size: 2rem;
-  color: #d35d1a;
-
   font-weight: 800;
 }
-
 body {
-  height: 100vh;
-  background: linear-gradient(to top right, #1abeb9ce, #1abeb96e);
-
-  font-family: "Josefin Sans", sans-serif;
+  background-color: #c5fffd;
 }
-.main-sec {
+.game-sec,
+.dice-sec {
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
-  flex-direction: column;
-  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
 }
-.search-div {
-  max-width: 60%;
+.game-sec {
+  position: relative;
+}
+.main {
+  width: 70%;
+  height: 55vh;
+  background-color: #edbf85;
+  margin-top: 1rem;
+}
+.main > * {
+  padding-top: 2rem;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.you-head {
+  color: rgba(0, 0, 255, 0.404);
+}
+.comp-head {
+  color: rgba(255, 0, 0, 0.432);
+}
+.dice-box {
+  width: 30%;
+  height: 20vh;
+  background-color: #7bc950;
+}
+.dice-head {
+  text-align: center;
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.dice {
+  height: 4rem;
+  width: 4rem;
   margin: 0 auto;
+
+  opacity: 0.9;
+  border: 7px solid blue;
+  border-radius: 10px;
 }
-input {
-  padding: 0.5rem 0;
-  border: none;
-  border-radius: 5px;
-  background: rgb(214 45 69 / 75%);
-  outline: none;
+.dice-red {
+  border: 7px solid red;
 }
-input::placeholder {
-  color: wheat;
-  padding-left: 1rem;
+img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
 }
-.content {
-  min-height: 40%;
-  max-width: 60%;
-  margin: 0 auto;
-  margin-top: 10px;
+.flex {
+  display: flex;
+}
+.box1 {
+  flex: 0 1 10%;
+  height: 5rem;
+  background-color: #c5fcef8a;
+  margin: 4px;
+  border-radius: 10px;
+}
+.box2 {
+  flex: 0 1 10%;
+  height: 5rem;
+  background-color: #e69f93;
+  margin: 4px;
+  border-radius: 10px;
+}
+h2 {
   text-align: center;
 }
 
-.content > * {
-  margin-bottom: 2.2rem;
+.winner {
+  width: 60%;
+  height: 40vh;
+  background-color: rgba(0, 0, 255, 0.63);
+  border: 2px solid green;
+  position: absolute;
+  text-align: center;
 }
-h3 {
+.winner-inactive {
+  display: none;
+}
+.winner h3 {
+  color: wheat;
   font-size: 2rem;
+  margin-top: 3rem;
   font-weight: 800;
-  color: #730004;
 }
-h4 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  font-weight: 800;
-  /* color: #f7f5dd; */
+.winner h4 {
+  color: wheat;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
-p {
-  font-size: 1.2rem;
-  color: rgba(0, 0, 0, 0.76);
+
+input {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  background-color: gray;
 }

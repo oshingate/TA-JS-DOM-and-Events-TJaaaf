@@ -2,57 +2,61 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chrome Extension</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <div class="header">
-        <h1>String methods JavaScript</h1>
-      </div>
+    <header class="header">
+      <h1>Race</h1>
     </header>
     <main>
-      <section class="main-sec">
-        <div class="content">
-          <!-- <div class="div-name">
-            <h3 class="name">toUpperCase()</h3>
+      <section class="game-sec">
+        <div class="main">
+          <div class="you-div flex">
+            <!-- <div class="box1"><img src="./assets/blue.jpeg" alt="" /></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div>
+            <div class="box1"></div> -->
           </div>
-
-          <div class="div-para">
-            <h4 class="para-head">parameters:</h4>
-            <p class="para">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsam
-              consectetur reprehenderit accusamus
-            </p>
+          <h2 class="you-head">YOU</h2>
+          <div class="comp-div flex">
+            <!-- <div class="box2"><img src="./assets/red.png" alt="" /></div>
+            <div class="box2"></div>
+            <div class="box2"></div>
+            <div class="box2"></div>
+            <div class="box2"></div>
+            <div class="box2"></div>
+            <div class="box2"></div>
+            <div class="box2"></div>
+            <div class="box2"></div>
+            <div class="box2"></div> -->
           </div>
-
-          <div class="div-return">
-            <h4 class="return-head">returns:</h4>
-            <p class="return">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-              itaque!
-            </p>
-          </div>
-
-          <div class="div-example">
-            <h4 class="example-head"> Example:</h4>
-            <p class="example">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-
-          <div class="div-about">
-            <h4 class="about-head">About:</h4>
-            <p class="about">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Quibusdam corporis veritatis aut fugiat dicta ipsam iure quis
-              alias architecto quas?
-            </p>
-          </div> -->
+          <h2 class="comp-head">COMP</h2>
+        </div>
+        <div class="winner winner-inactive">
+          <h3>Winner is :</h3>
+          <h4 class="winner-name"></h4>
+          <input
+            type="button"
+            value="Play again"
+            onClick="document.location.reload(true)"
+          />
+        </div>
+      </section>
+      <section class="dice-sec">
+        <div class="dice-box">
+          <h3 class="dice-head"></h3>
+          <a href="#"
+            ><div class="dice"><img src="./assets/click.png" alt="" /></div
+          ></a>
         </div>
       </section>
     </main>

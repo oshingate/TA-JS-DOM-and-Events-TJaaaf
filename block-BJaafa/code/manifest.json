@@ -1,6 +1,6 @@
 {
-  "name": "String Methods",
-  "description": "String Methods",
+  "name": "Race game",
+  "description": "Race game",
   "version": "1.0.0",
   "manifest_version": 2,
   "chrome_url_overrides": {
