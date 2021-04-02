@@ -1,0 +1,198 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* =======  our css ================ */
+header {
+  background: linear-gradient(to top right, #e47d089f, rgba(233, 7, 56, 0.345));
+  max-height: 10vh;
+  padding: 2vh 0;
+  text-align: center;
+}
+h1 {
+  font-size: 2rem;
+  color: #d35d1a;
+
+  font-weight: 800;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to top right, #1abeb9ce, #1abeb96e);
+
+  font-family: "Josefin Sans", sans-serif;
+}
+.main-sec {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+  padding: 10px;
+}
+.search-div {
+  max-width: 60%;
+  margin: 0 auto;
+}
+input {
+  padding: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+  background: rgb(214 45 69 / 75%);
+  outline: none;
+}
+input::placeholder {
+  color: wheat;
+  padding-left: 1rem;
+}
+.content {
+  min-height: 40%;
+  max-width: 60%;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.content > * {
+  margin-bottom: 2.2rem;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #730004;
+}
+h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  /* color: #f7f5dd; */
+}
+p {
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.76);
+}
